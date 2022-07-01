@@ -36,7 +36,7 @@ const Reviews = () => {
 //===Average Rating Component4===
 const AverageRating = () => {
     return <div className= "container2">
-        <h3>Average Rating</h3>
+        <h3>Average</h3><h3>Rating</h3>
         <h5>4.6</h5>
     </div>
 }
@@ -44,7 +44,7 @@ const AverageRating = () => {
 //===Sentiment Analysis Component5===
 const SentimentAnalysis = () => {
     return <div className= "container3">
-        <h3>Sentiment Analysis</h3>
+        <h3>Sentiment</h3><h3>Analysis</h3>
         <ul className= "list2">
             <li><h5>960</h5></li>
             <li><h5>122</h5></li>

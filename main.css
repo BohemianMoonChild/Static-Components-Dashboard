@@ -5,67 +5,118 @@
     --cyan: #009dab;
     --dark-orange: #ab6300;
     --verydarkorange: #4e2b00;
+    --blue: #283747;
+    --cerulean: #007BA7;
     
 
 }
 
 body {
-    background-color: darkcyan;
-    background-image: "/Ocean.jpg"
+    background-color: var(--blue);
+    
     
 }
+
+
+
+/* .container {
+    display: grid;
+    display: flex;
+    background-color: var(--dark-cyan);
+    height: 100vh;
+} */
+
+.container {
+    display: grid;
+    grid-template:
+          'header header header header header'
+          'menu menu reviews ratings analysis'
+          'menu menu visitors visitors visitors'
+          'menu menu visitors visitors visitors'
+          'menu menu visitors visitors visitors'
+          
+          ;
+
+          grid-gap: 10px;
+          padding: 30px;
+          height: 100vh;
+          background-image: url(./Images/Ocean.jpg);
+          /* opacity: .5; */
+          /* background-color: var(--verydarkorange); */
+          border-radius: 10px;
+        
+
+          /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr 100px  */
+}
+
+
 .header {
+    grid-area: header;
+    background-color: var(--cerulean);
+    border-radius: 10px;
+    border: 5px;
+    /* border-color: var(--darklimegreen); */
+    text-shadow: 2px 2px #283747;
     text-align: center;
-    font-size: large; 
+    font-size: 25px; 
     font-family: Georgia;
     color: var(--verydarkorange);
+    
+    
     
 }
 
 .menu {
-    display: block;
-    background-color: var(--cyan);
-    align-items: auto;
-    flex-direction: column;
+    /* display: block; */
+    background-color: var(--cerulean);
+    /* align-items: auto;
+    flex-direction: column; */
     border: 5px solid;
     border-color: var(--darklimegreen);
     border-radius: 10px;
-    width: 200px;
-    height: 500px;
+    /* width: 200px; */
+    /* height: 500px;
     margin-left: 50px;
-    margin-top: 45px;
+    margin-top: 45px; */
+    grid-area: menu;
+
     
 
 }
 
 .container1 {
-    display: flex;
+    /* display: flex; */
     background-color: var(--cyan);
-    flex-direction: column;
+    text-align: center;
+    /* flex-direction: column; */
     font-family: Georgia;
-    align-items: center;
+    /* align-items: center; */
     border: 5px solid;
     border-color: var(--darklimegreen);
     border-radius: 10px;
-    width: 225px;
+    /* width: 225px;
     height: 250px;
     margin-left: 300px;
-    margin-top: -510px;
+    margin-top: -510px; */
+    grid-area: reviews;
 }
 
 .container2 {
-    display: flex;
+    /* display: flex; */
     background-color: var(--cyan);
-    flex-direction: column;
+    text-align: center;
+    /* flex-direction: column; */
     font-family: Georgia;
-    align-items: center;
+    /* align-items: center; */
     border: 5px solid;
     border-color: var(--darklimegreen);
     border-radius: 10px;
-    width: 225px;
+    /* width: 225px;
     height: 250px;
     margin-left: 550px;
-    margin-top: -260px;
+    margin-top: -260px; */
+    grid-area: ratings;
 }
 
 /* .list2 {
@@ -75,41 +126,44 @@ body {
 } */
 
 .container3 {
-    display: block;
+    /* display: block; */
     background-color: var(--cyan);
-    flex-direction: column;
+    /* flex-direction: column; */
     font-family: Georgia;
-    align-items: center;
+    /* align-items: center; */
     border: 5px solid;
     border-color: var(--darklimegreen);
     border-radius: 10px;
-    width: 225px;
+    /* width: 225px;
     height: 250px;
     margin-left: 800px;
-    margin-top: -260px;
+    margin-top: -260px; */
+    grid-area: analysis;
 }
 
 h3 {
     text-align: center;
     font-family: Georgia;
     font-style: oblique;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--verydarkorange);
 }
 
 .container4 {
-    display: flex;
+    /* display: flex; */
     background-color: var(--cyan);
-    flex-direction: column;
+    text-align: center;
+    /* flex-direction: column; */
     font-family: Georgia;
-    align-items: center;
+    /* align-items: center; */
     border: 5px solid;
     border-color: var(--darklimegreen);
     border-radius: 10px;
-    width: 727px;
+    /* width: 727px;
     height: 208px;
     margin-left: 300px;
-    margin-top: 32px;
+    margin-top: 32px; */
+    grid-area: visitors;
 
 }
 
@@ -122,4 +176,12 @@ h3 {
 
 h5 {
     color: var(--verydarkorange);
+    font-size: 15px;
 }
+
+.list2 {
+    text-align: start;
+}
+
+
+ 
